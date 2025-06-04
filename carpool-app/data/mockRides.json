@@ -1,0 +1,5 @@
+{
+    "rides": [
+      { "id": 1, "from": "Paris", "to": "Lyon", "seats": 3, "price": 20, "driver": "Alice" }
+    ]
+  }

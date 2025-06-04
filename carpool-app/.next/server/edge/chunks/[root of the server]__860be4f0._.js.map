@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/middleware.ts"],"sourcesContent":["import { NextResponse } from 'next/server';\nimport type { NextRequest } from 'next/server';\n\nexport function middleware(request: NextRequest) {\n  // Instead of looking for cookies, we'll check the Authorization header\n  // But since we can't access localStorage in middleware, we'll need to modify our approach\n  \n  // For protected routes, we'll redirect to login if there's no token in localStorage\n  // This will be handled by the client-side AuthContext instead\n  \n  // We'll keep this simple and just let the client-side handle auth\n  return NextResponse.next();\n}\n\nexport const config = {\n  matcher: [\n    '/rides/:path*',\n    '/profile/:path*',\n    '/login',\n    '/register'\n  ]\n};"],"names":[],"mappings":";;;;AAAA;AAAA;;AAGO,SAAS,WAAW,OAAoB;IAC7C,uEAAuE;IACvE,0FAA0F;IAE1F,oFAAoF;IACpF,8DAA8D;IAE9D,kEAAkE;IAClE,OAAO,6LAAA,CAAA,eAAY,CAAC,IAAI;AAC1B;AAEO,MAAM,SAAS;IACpB,SAAS;QACP;QACA;QACA;QACA;KACD;AACH"}}]
+}
